@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway);
+
+body {
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quote-box {
+    border-radius: 3px;
+    position: relative;
+    width: 450px;
+    padding: 40px 50px;
+    background-color: #fff;
+}
+
+.quote-box h1 {
+    text-align: center;
+    width: 450px;
+    height: auto;
+    clear: both;
+    font-weight: 500;
+    font-size: 1.75em;
+}
+
+.quote-box h4 {
+    font-size: 1em;
+    text-align: right;
+}
