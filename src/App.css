@@ -30,3 +30,22 @@ body {
     font-size: 1em;
     text-align: right;
 }
+
+.buttons-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    height: 38px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    outline: none;
+    font-size: 0.85em;
+    padding: 8px 18px 6px 18px;
+    opacity: 1;
+    cursor: pointer;
+}

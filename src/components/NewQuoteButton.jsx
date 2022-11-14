@@ -1,7 +1,7 @@
 import React from 'react';
 import {UseAppContext} from "../context/context";
 
-const Button = () => {
+const NewQuoteButton = () => {
     const context = UseAppContext();
 
     const handleClick = () => {
@@ -10,8 +10,8 @@ const Button = () => {
     }
 
     return (
-        <button onClick={handleClick}>New quote</button>
+        <button onClick={handleClick} className="button" style={{backgroundColor: context.randomColor}}>New quote</button>
     );
 };
 
-export default Button;
+export default NewQuoteButton;
