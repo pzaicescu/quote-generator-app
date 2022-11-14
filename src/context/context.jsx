@@ -8,6 +8,7 @@ export const UseAppContext = () => {
     return useContext(AppContext);
 };
 
+
 export const AppContextProvider = (props) => {
     const url = "https://type.fit/api/quotes";
 

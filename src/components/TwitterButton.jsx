@@ -5,12 +5,19 @@ import {BsTwitter} from "react-icons/bs"
 const TwitterButton = () => {
     const context = UseAppContext()
 
-    const handlePostTwitter = () => {
-        console.log("Tweet")
+    const quoteToPost = {
+        quote: context.quotes[context.randomNumber]?.text,
+        author: context.quotes[context.randomNumber]?.author || "Unknown author"
     }
 
     return (
-        <button className="button" style={{backgroundColor: context.randomColor}} onClick={handlePostTwitter}><BsTwitter/></button>
+        <a className="button"
+           style={{backgroundColor: context.randomColor}}
+           href={`https://twitter.com/intent/tweet?text=${quoteToPost.quote}%20-%20${quoteToPost.author}`}
+        >
+            <BsTwitter style={{height: "20px", width: "20px"}}/>
+        </a>
+
     );
 };
 

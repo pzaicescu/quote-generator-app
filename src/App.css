@@ -39,6 +39,7 @@ body {
 }
 
 .button {
+    font-family: 'Raleway', serif;
     height: 38px;
     border: none;
     border-radius: 3px;
@@ -48,4 +49,5 @@ body {
     padding: 8px 18px 6px 18px;
     opacity: 1;
     cursor: pointer;
+    box-sizing: border-box;
 }
